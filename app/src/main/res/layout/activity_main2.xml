@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.think.logapp.Main2Activity">
+
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_marginTop="2dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="标题"
+        android:textSize="30dp"
+        android:gravity="center|left"/>
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_below="@+id/titleName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:weightSum="1"
+        >
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/contextName"
+        android:layout_below="@+id/titleLayout"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="内容"
+        android:textSize="30dp"
+        android:gravity="center|left"
+        />
+
+    <LinearLayout
+        android:id="@+id/contextNameLayout"
+        android:layout_below="@+id/contextName"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:weightSum="1"
+        >
+
+        <EditText
+            android:id="@+id/context"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_below="@+id/contextNameLayout"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交" />
+
+    <Button
+        android:id="@+id/queryAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/submit"
+        android:layout_alignBottom="@+id/submit"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_toEndOf="@+id/submit"
+        android:layout_toRightOf="@+id/submit"
+        android:text="查询所有" />
+
+
+</RelativeLayout>

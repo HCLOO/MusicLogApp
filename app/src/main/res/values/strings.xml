@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LogApp</string>
+    <string name="action_addLog">添加日志</string>
+</resources>
